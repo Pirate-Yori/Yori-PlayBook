@@ -1,25 +1,13 @@
-# Hashcat
+# Attaques RSA
 
-Outil : Hashcat
+## Calculer d avec p, q, e (Python)
 
-## MD5
-hashcat -m 0 hash.txt rockyou.txt
+from Crypto.Util.number import inverse
+phi = (p-1)*(q-1)
+d = inverse(e, phi)
 
-## SHA256
-hashcat -m 1400 hash.txt rockyou.txt
+## Vérifier si n est factorisable
+Utiliser factordb.com
 
-## Voir tous les modes
-hashcat --help
-
-## Attaque brute force masque
-hashcat -m 0 -a 3 hash.txt ?a?a?a?a?a?a
-
-## Afficher les mots trouvés
-hashcat -m 0 hash.txt rockyou.txt --show
-
----
-
-## Notes personnelles
-- GPU utilisé
-- Performance
-- Difficulté rencontrée
+## Vérifier si e est trop petit
+e = 3 → attention attaque low exponent
