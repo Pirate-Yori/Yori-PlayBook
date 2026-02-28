@@ -1,4 +1,7 @@
 # Hashcat
+#Syntaxe de base
+Hashcat utilise la syntaxe de base suivante: 
+hashcat -m <hash_type> -a <attack_mode> hashfile wordlist
 
 Outil : Hashcat
 
@@ -23,3 +26,4 @@ hashcat -m 0 hash.txt rockyou.txt --show
 - GPU utilisé
 - Performance
 - Difficulté rencontrée
+
