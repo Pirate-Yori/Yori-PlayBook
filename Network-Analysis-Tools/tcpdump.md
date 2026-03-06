@@ -185,6 +185,12 @@ Cette commande affiche :
 * le contenu hexadécimal
 * la représentation ASCII
 
+
+# Afficher le contenu des paquets de maniere tres simplifie
+
+```bash
+tcpdump -q
+```
 ---
 
 # Cas d'utilisation en cybersécurité
